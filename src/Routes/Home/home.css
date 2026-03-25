@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo geral */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f4c81, #1fb5a9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.233);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header {
+  display: flex;
+  padding: 5px 30px;
+  background: linear-gradient(90deg, #E4F2E7, #c3f5ce);
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  background-image: url("../../assets/bg-logo.png");
+  background-size: contain;
+  height: 6rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.logo-text {
+  z-index: -1;
+}
+
+.logo span {
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* Conteúdo principal */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Título */
+.main h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+/* Texto */
+.main p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+/* Botão */
+.btn-primary {
+  background: linear-gradient(90deg, #28c76f, #00c9a7);
+  border: none;
+  padding: 16px 40px;
+  font-size: 18px;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover do botão */
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito ao clicar */
+.btn-primary:active {
+  transform: scale(0.98);
+}

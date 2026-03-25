@@ -1,19 +1,24 @@
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
+import Home from './Routes/Home';
 
 function App() {
-
   return (
-  
-      
-        <div>
-          <h1>Bem-vindo a Plumb Quantium Solutions!</h1>
-          <h3>Vamos entender como você está se sentindo no trabalho</h3>
+    <>
+      {/* <Cabecalho />
+      <Container>
+        <Login></Login>
+      </Container> */}
 
-        </div>
-      
-     
-  )
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+         
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App
