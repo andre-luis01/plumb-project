@@ -1,0 +1,80 @@
+
+/* Caixa da pesquisa */
+.survey-box {
+  
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+/* Progresso */
+.progress {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* Pergunta */
+.question {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Opções */
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Botões de resposta */
+.answer {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  padding: 14px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.answer:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Selecionado */
+.answer.selected {
+  border: 2px solid #00c9a7;
+  background: rgba(0, 201, 167, 0.2);
+}
+
+/* Botão próximo */
+.btn-next {
+  background: linear-gradient(90deg, #28c76f, #00c9a7);
+  border: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.btn-next:hover {
+  transform: translateY(-2px);
+}
+
+/* Desabilitado */
+.btn-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

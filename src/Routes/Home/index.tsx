@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import "./home.css";
+import Container from "../../components/container";
 
 function Home() {
+  const navigate = useNavigate()
   return (
-    <div className="container">
+    <Container>
       <header className="header">
         <div className="logo">
           <p className="logo-text">Plumb | Quantium Solutions</p>
@@ -14,9 +17,9 @@ function Home() {
         <p>
           Vamos ajudar a entender melhor como você está se sentindo no trabalho.
         </p>
-        <button className="btn-primary">Iniciar Pesquisa</button>
+        <button className="btn-primary" onClick={() => navigate("/form")}>Iniciar Pesquisa</button>
       </main>
-    </div>
+    </Container>
   );
 }
 export default Home;
